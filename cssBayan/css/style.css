@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: "Lato Bold";
+	src: url("../fonts/Lato-Bold.eot");
+	src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+		/* url("./Fonts/Lato-Bold.woff") format("woff"), */ url("../fonts/Lato-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Lato Medium";
+	src: url("../fonts/Lato-Medium.eot");
+	src: url("../fonts/Lato-Medium.eot?#iefix") format("embedded-opentype"),
+		/* url("./Fonts/Lato-Medium.woff") format("woff"), */ url("../fonts/Lato-Medium.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+body {
+	background-color: antiquewhite;
+}
+.container{
+	display: block;
+	margin: 0 auto;
+	width: 67%;
+}
+.title {
+	display: block;
+	font-family: "Lato Bold";
+	font-size: 50pt;
+	padding-bottom: 2%;
+}
+.title__divider {
+	display: block;
+	width: 100% ;
+	height: 0.12rem;
+	background-color:rgb(197, 211, 215);
+}
+.bayan {
+	margin-top: 2%;
+	cursor: pointer;
+}
+.bayan__block {
+	display: block;
+}
+.bayan__item {
+	padding-bottom: 2%;
+}
+.bayan__title {
+	display: block;
+	cursor: pointer;
+	font-family: "Lato Bold";
+	font-size: 32pt;
+}
+.bayan__radio {
+	-webkit-appearance: none;
+	appearance: none;
+	position: absolute;
+}
+.bayan__radio:checked + .bayan__img {
+	display: block;
+}
+.bayan__img {
+	display: none;
+}
+img {
+	display: block;
+	margin: 4% auto;
+	width: 40%;
+}
+@media (min-width: 1920px) {
+}
+@media (min-width: 820px) {
+}
+@media (min-width: 320px) {
+}
