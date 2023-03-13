@@ -1,0 +1,177 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+	font-family: "Lato Bold";
+	src: url("../fonts/Lato-Bold.eot");
+	src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/Lato-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@media (min-width: 320px) {
+	body {
+		background-color: antiquewhite;
+	}
+	.container {
+		display: block;
+		margin: 0 auto;
+		width: 93%;
+	}
+	.title {
+		display: block;
+		font-family: "Lato Bold";
+		font-size: 33pt;
+		padding-bottom: 2%;
+	}
+	.title__divider {
+		display: block;
+		width: 100%;
+		height: 0.12rem;
+		background-color: rgb(197, 211, 215);
+	}
+	.bayan__block {
+		display: block;
+		outline: 0;
+	}
+	.bayan__title {
+		display: block;
+		position: relative;
+		font-family: "Lato Bold";
+		font-size: 22pt;
+		padding-top: 2%;
+	}
+	.bayan__mem {
+		margin-left: 40%;
+		width: 0;
+		padding-top: 2%;
+		visibility: hidden;
+		transition: 0.4s ease-in-out;
+	}
+	.bayan__radio {
+		-webkit-appearance: none;
+		appearance: none;
+		position: absolute;
+	}
+	.bayan__radio:checked ~ .bayan__mem {
+		display: block;
+		margin: 0 auto;
+		padding: 2% 0;
+		width: 99%;
+		height: 99%;
+		visibility: visible;
+	}
+}
+@media (min-width: 820px) {
+	.container {
+		width: 85%;
+	}
+	.title {
+		font-size: 50pt;
+	}
+	.bayan__title {
+		font-size: 32pt;
+	}
+	.bayan__title:after {
+		content: "";
+		display: block;
+		opacity: 1;
+		transition: opacity 0.6s ease-in-out;
+		position: absolute;
+		margin-left: 93%;
+		margin-top: -3.2rem;
+		background: url(../image/icons/add_FILL0_wght400_GRAD0_opsz48.png) no-repeat 50% / cover;
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	.bayan__radio:checked ~ .bayan__mem {
+		width: 60% !important;
+	}
+	.bayan__radio:checked ~ .bayan__title:after {
+		content: "";
+		display: block;
+		position: absolute;
+		margin-left: 93%;
+		margin-top: -3.2rem;
+		background: url(../image/icons/close_FILL0_wght400_GRAD0_opsz48.png) no-repeat 50% / cover;
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	.bayan__radio:checked ~ .bayan__title {
+		color: black;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		width: 67% !important;
+	}
+	.bayan {
+		cursor: pointer;
+		color: rgb(35, 112, 194);
+		transition: color 0.3s;
+	}
+	.bayan:hover {
+		color: black;
+	}
+	.bayan__item {
+		cursor: pointer;
+		padding-top: 2%;
+	}
+	.bayan__title:after {
+		content: "";
+		display: block;
+		opacity: 0;
+		transition: opacity 0.6s ease-in-out;
+		position: absolute;
+		margin-left: 93%;
+		margin-top: -3.2rem;
+		background: url(../image/icons/add_FILL0_wght400_GRAD0_opsz48.png) no-repeat 50% / cover;
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	.bayan__radio:checked ~ .bayan__mem {
+		width: 40% !important;
+		margin: 0 auto;
+		padding-bottom: 2%;
+	}
+	.bayan:hover .bayan__title:after {
+		opacity: 1;
+	}
+	.bayan__radio:checked ~ .bayan__title:after {
+		content: "";
+		display: block;
+		position: absolute;
+		margin-left: 93%;
+		margin-top: -3.2rem;
+		background: url(../image/icons/close_FILL0_wght400_GRAD0_opsz48.png) no-repeat 50% / cover;
+		width: 2.5rem;
+		height: 2.5rem;
+	}
+	.bayan__radio:checked ~ .bayan__title {
+		color: black;
+	}
+	.bayan__item:hover .bayan__mem {
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 2%;
+		width: 40%;
+		visibility: visible;
+		
+	}
+	.bayan__item:hover .bayan__title:after {
+		opacity: 0;
+	}
+	.bayan__item:hover .bayan__title:after {
+		content: "";
+		display: block;
+		position: absolute;
+		margin-left: 93%;
+		margin-top: -3.2rem;
+		background: url(../image/icons/close_FILL0_wght400_GRAD0_opsz48.png) no-repeat 50% / cover;
+		width: 2.5rem;
+		height: 2.5rem;
+		opacity: 1;
+	}
+}
